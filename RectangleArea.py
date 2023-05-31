@@ -6,5 +6,5 @@ area = width * length
 perimeter = 2 * (length + width)
 
 print("----- Result -----")
-print("Area of the rectangle: ", area)
-print("Perimeter of the rectangle: ", perimeter)
+print("Area of the rectangle: ", format(area, ".2f"))
+print("Perimeter of the rectangle: ", format(perimeter, ".2f"))
