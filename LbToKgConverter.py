@@ -14,5 +14,5 @@ try:
     else:
         print("Error: Invalid unit of measurement. Please select either 'K' or 'L'.")
 
-except:
+except ValueError:
     print("Invalid input. Please enter a number for weight.")
