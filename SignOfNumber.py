@@ -8,7 +8,7 @@ try:
     elif n > 0:
         print("Positive number.")
     else:
-        print("Zero.")
+        print("Null.")
 
 except ValueError:
     print("Error. Please insert a numerical input. ")
