@@ -1,10 +1,18 @@
-hours = int(input("Enter Hours: "))
-rate = float(input("Enter rate: "))
+hours = input("Enter Hours: ")
+rate = input("Enter rate: ")
 
-if hours > 40:
-    overtime = hours - 40
-    pay = (hours * rate) + (overtime * (rate * 0.5))
+try:
+    ho = float(hours)
+    r = float(rate)
+
+except:
+    print("Error, please enter numeric input. ")
+    quit()
+
+if ho > 40:
+    overtime = ho - 40
+    pay = (ho * r) + (overtime * (r * 0.5))
 else:
-    pay = hours * rate
+    pay = ho * r
 
 print("Pay: ", format(pay, ".2f"))
