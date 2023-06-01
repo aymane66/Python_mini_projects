@@ -5,7 +5,7 @@ try:
 
     if temp < 0:
         print("Solid")
-    elif temp >= 100:
+    elif temp > 100:
         print("Gas")
     else:
         print("Liquid")
