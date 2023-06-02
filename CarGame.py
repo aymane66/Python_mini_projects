@@ -10,8 +10,12 @@ while True:
         """)
     elif command == "start":
         print("Car started ... Ready to go!")
+        if command == "start":
+            print("The car has already started ..")
     elif command == "stop":
         print("Car stopped!")
+        if command == "stop":
+            print("The car has already stopped ..")
     elif command == "quit":
         quit()
     else:
