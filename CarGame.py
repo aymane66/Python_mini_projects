@@ -8,7 +8,7 @@ while True:
     start - to start the car
     stop - to stop the car
     quit - to exit
-        """)}
+        """)
     elif command == "start":
         if started:
             print("The car is already started. ")
