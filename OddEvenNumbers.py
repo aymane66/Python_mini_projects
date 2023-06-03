@@ -3,9 +3,7 @@ number = input("Insert a number: ")
 try:
     number = int(number)
 
-    r = number % 2
-
-    if r == 1:
+    if number % 2 == 1:
         print("Odd number. ")
     else:
         print("Even number. ")
