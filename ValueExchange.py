@@ -15,8 +15,10 @@ try:
 
     # else, we add up x and y in x, and we multiply x and y in y
     else:
-        x += y
-        y = x * y
+        a = x + y
+        b = x * y
+        x = a
+        y = b
         print("x =", x, "y =", y)
 
 except ValueError:
