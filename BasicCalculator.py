@@ -24,7 +24,5 @@ try:
     else:
         print("Invalid operator. Please enter one of '+', '-', '*', or '/'.")
 
-except:
+except ValueError:
     print("Invalid input. Please enter numbers for x and y.")
-
-
