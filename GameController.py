@@ -12,7 +12,7 @@ try:
     elif command == 2:
         print("The character goes down. ")
     else:
-        print("Wrong command. ")
+        print("Wrong command. The character does not move.")
 
 except ValueError:
     print("Invalid input. ")
