@@ -17,6 +17,5 @@ try:
     else:
         print("Invalid category! ")
 
-except:
+except ValueError:
     print("Invalid price input")
-
