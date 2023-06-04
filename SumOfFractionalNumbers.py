@@ -1,4 +1,4 @@
-# This program counts the sum of numbers 1/2 + 1/2 ... + 1/n
+# This program counts the sum of numbers 1/2 + 1/2 ... + 1/number
 
 n = input("Number: ")
 
