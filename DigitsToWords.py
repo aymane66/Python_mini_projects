@@ -15,3 +15,4 @@ dictionary = {
 
 for i in numbers:
     print(dictionary[i], end="")
+
