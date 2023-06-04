@@ -17,6 +17,5 @@ try:
         s += 500 + (i * 3)
     print(f"Balance: {s} MAD")
 
-
 except ValueError:
     print("Invalid input! ")
