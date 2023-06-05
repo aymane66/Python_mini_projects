@@ -1,6 +1,4 @@
-n = 0
-
-while n <= 10 or n >= 20:
+while True:
     try:
         n = int(input("Numbers (between 10 and 20): "))
         if n >= 20:
@@ -9,5 +7,6 @@ while n <= 10 or n >= 20:
             print("Too small! Please enter a larger number. ")
         else:
             print("Congrats! You chose a number between 10 and 20. ")
+            break
     except ValueError:
         print("Invalid input. Please enter a valid number.")
