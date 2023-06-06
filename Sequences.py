@@ -6,7 +6,7 @@ try:
 
     for i in range(n):
         u = 4 * u + 10
-    print("Result: ", u)
+    print(f"U {i + 1} = ", u)
 
 except ValueError:
     print("Invalid input! ")
