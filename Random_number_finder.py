@@ -1,7 +1,7 @@
 import random
 print("Hey! I chose a number between 1 and 30. Can you guess it? ")
-print("You have 5 trials!")
-print("-----------------------------")
+print("---------- You have 5 trials! ----------")
+print("----------------------------------------")
 n = random.randint(1, 30)
 t = 0
 
