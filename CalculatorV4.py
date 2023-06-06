@@ -1,16 +1,17 @@
 print("------------- Calculator: Menu -------------")
-print()
-print("1 - Addition")
-print("2 - Subtraction")
-print("3 - Multiplication")
-print("4 - Division")
-print("5 - Division remainder")
-print("6 - Power")
-print("-----------------------------")
-
 op = 0
 while True:
     try:
+
+        print()
+        print("1 - Addition")
+        print("2 - Subtraction")
+        print("3 - Multiplication")
+        print("4 - Division")
+        print("5 - Division remainder")
+        print("6 - Power")
+        print("-----------------------------")
+
         op = int(input("Operation: "))
         if op < 1 or op > 6:
             print("Invalid operator! Please insert choice between 1 to 6.")
