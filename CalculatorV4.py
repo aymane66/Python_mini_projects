@@ -1,8 +1,6 @@
 print("------------- Calculator: Menu -------------")
-op = 0
 while True:
     try:
-
         print()
         print("1 - Addition")
         print("2 - Subtraction")
@@ -31,7 +29,10 @@ while True:
                 else:
                     print("Division by zero is not possible! ")
             elif op == 5:
-                print(f"{a} % {b} = {a % b}")
+                if b != 0:
+                    print(f"{a} % {b} = {a % b}")
+                else:
+                    print("Division by zero is not possible! ")
             elif op == 6:
                 print(f"{a} raised to the power of {b} = {a ** b}")
 
