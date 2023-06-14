@@ -4,17 +4,9 @@ def perfect_num(n):
         if n % i == 0:
             s += i
     if n == s:
-        print(f"Number {m} is a perfect number. ")
-    else:
-        print(f"Number {m} is NOT a perfect number. ")
+        print(n)
 
 
-n = input("Number: ")
-m = n
-try:
-    n = int(n)
-
-    perfect_num(n)
-
-except ValueError:
-    print("Invalid input! ")
+print("Perfect numbers between 1 and 10000 are: ")
+for i in range(1, 10000):
+    perfect_num(i)
