@@ -17,5 +17,6 @@ try:
 
     is_prime(n)
 
+
 except ValueError:
     print("Invalid input! ")
