@@ -1,7 +1,7 @@
 def is_prime(n):
     count = 1
-    for i in range(2, n // 2):
-        if n % 2 == 0:
+    for i in range(2, int(n / 2) + 1):
+        if n % i == 0:
             count = 0
             break
     if count == 1:
