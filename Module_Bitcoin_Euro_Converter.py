@@ -1,13 +1,23 @@
-from currency_converter import CurrencyConverter
+from forex_python.bitcoin import BtcConverter
 
-amount = input("Amount in BitCoin: ")
+btc = BtcConverter()
 
-try:
-    amount = float(amount)
+while True:
+    amount = input("Amount in Euro (enter 'q' to quit): ")
+    if amount.lower() == 'q':
+        break
 
-    R = CurrencyConverter.convert(amount, 'EUR', 'USD')
+    try:
+        amount = float(amount)
+        converted = btc.convert_btc_to_cur(amount, 'EUR')
+        latest_price = btc.get_latest_price('EUR')
 
-    print(R)
+        print("-------------------------------------------")
+        print(f"Latest price: 1 Euro = {latest_price} BTC")
+        print(f"{amount} EURO = {converted} BTC")
+        print("-------------------------------------------")
 
-except ValueError:
-    print("Invalid input! ")
+    except ValueError:
+        print("Invalid input! Please enter a valid amount.")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
