@@ -5,3 +5,5 @@ for i in range(10):
     numbers.append(num)
 print(numbers)
 
+numbers.sort()
+print("Second biggest number: ", numbers[-2])
