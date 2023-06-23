@@ -5,12 +5,12 @@ for i in range(10):
     numbers.append(num)
 print("Inserted numbers: ", numbers)
 
-search = input("Number: ")
+n = input("Number: ")
 try:
-    search = int(search)
+    n = int(n)
 
-    count = numbers.count(search)
-    print(f"Number of occurrence of number {search}: ", count)
+    count = numbers.count(n)
+    print(f"Number of occurrence of {n}: ", count)
 
 except ValueError:
     print("Invalid input! ")
