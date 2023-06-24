@@ -60,7 +60,3 @@ numbers = 0
 for name, grade, observation in zip(student_names, grades, observations):
     numbers += 1
     print(f"Student number {numbers}:\nStudent name: {name}\nGrade: {grade}/20\nTeacher´s observation: {observation}\n")
-
-
-
-
