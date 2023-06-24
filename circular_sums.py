@@ -15,4 +15,4 @@ for number in numbers:
         positive_numbers.append(number)
 
 updated_numbers = negative_numbers + positive_numbers
-print(updated_numbers)
+print("Result: ", updated_numbers)
