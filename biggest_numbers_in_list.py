@@ -5,10 +5,10 @@ def get_numbers(n):
     return numbers
 
 
-def reverse(numbers, m):
+def get_largest_numbers(numbers, m):
     numbers.sort(reverse=True)
-    numbers_1 = numbers[:m]
-    return numbers_1
+    largest_numbers = numbers[:m]
+    return largest_numbers
 
 
 n = int(input("Total elements of the list: "))
@@ -16,4 +16,4 @@ numbers = get_numbers(n)
 print("Your list: ", numbers)
 
 m = int(input("Number of largest numbers to display: "))
-print(f"The {m} biggest numbers in your list are: ", reverse(numbers, m))
+print(f"The {m} biggest numbers in your list are: ", get_largest_numbers(numbers, m))
