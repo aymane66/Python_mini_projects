@@ -1,15 +1,10 @@
 scores = []
-for subject in range(4):
+for subject in range(2):
     rows = []
-    for student in range(5):
+    for student in range(3):
         rows.append(float(input(f"Insert score {subject + 1} of student {student + 1}: ")))
     scores.append(rows)
-
-print("Scores: ")
-for i in scores:
-    for j in i:
-        print(j, end="  ")
-    print()
+print("Scores: ", scores)
 
 total = 0
 for i in scores:
